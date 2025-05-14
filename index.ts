@@ -1,4 +1,4 @@
-import { Client, MessageMedia } from 'whatsapp-web.js';
+import { Client, LocalAuth, MessageMedia } from 'whatsapp-web.js';
 import qrcode from 'qrcode-terminal';
 
 const client = new Client({
@@ -6,6 +6,7 @@ const client = new Client({
 		headless: true,
 	},
 	ffmpegPath: '/usr/local/bin/ffmpeg',
+	authStrategy: new LocalAuth(),
 });
 
 client.on('ready', () => {

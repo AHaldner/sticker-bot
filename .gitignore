@@ -26,10 +26,13 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .eslintcache
 .cache
 *.tsbuildinfo
-.wwebjs_cache
 
 # IntelliJ based IDEs
 .idea
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# wwebjs
+.wwebjs_auth
+.wwebjs_cache
